@@ -148,7 +148,7 @@ She joined the InterMine team in 2010, working for 3 years, primarily in the bac
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://intermine.org/team/yo/</guid>
-      <description>Software engineer with a focus on front-end technologies such as Javascript, ClojureScript, and User Interfaces. May be spotted blogging, tweeting from her own account, @intermineorg, @gmodproject, or updating the InterMine homepage. Loves interacting with open source communities. She&#39;s also a Software Sustainability Institute Fellow, and is studying effects of community and usability on open source projects for an EngD with the University of Manchester. In her spare time you can find her running, cycling, or reading speculative fiction.</description>
+      <description>GSoC Organisation Admin, software engineer with a focus on front-end technologies such as Javascript, ClojureScript, and User Interfaces. May be spotted blogging, tweeting from her own account, @intermineorg, @gmodproject, or updating the InterMine homepage. Loves interacting with open source communities. She&#39;s also a Software Sustainability Institute Fellow, and is studying effects of community and usability on open source projects for an EngD with the University of Manchester. In her spare time you can find her running, cycling, or reading speculative fiction.</description>
     </item>
     
     <item>
@@ -167,6 +167,16 @@ She joined the InterMine team in 2010, working for 3 years, primarily in the bac
       
       <guid>http://intermine.org/developers/apidocumentation/</guid>
       <description>Dive straight into our API with interactive live documentation.</description>
+    </item>
+    
+    <item>
+      <title>Code of Conduct</title>
+      <link>http://intermine.org/code-of-conduct/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://intermine.org/code-of-conduct/</guid>
+      <description>InterMine Code of Conduct Like the technical community as a whole, the InterMine team and community is made up of a mixture of professionals and volunteers from all over the world, working on every aspect of the mission - including mentorship, teaching, and connecting people.
+Diversity is one of our huge strengths, but it can also lead to communication issues and unhappiness. To that end, we have a few ground rules that we ask people to adhere to.</description>
     </item>
     
     <item>
@@ -276,8 +286,9 @@ Android  Search genes across multiple InterMines, as well as viewing lists, temp
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://intermine.org/credits/</guid>
-      <description>InterMine Homepage Copyright InterMine 2017 Site This site is generated using the static site generator hugo and hosted on GitHub pages.
-Icons SVG icons used on the site are courtesy of IcoMoon and academicons (pubmed icon). Organism icons on the home page are made by Freepik from www.flaticon.com.</description>
+      <description>InterMine Homepage Copyright InterMine 2017-2019 Site This site is generated using the static site generator hugo and hosted on GitHub pages.
+Icons SVG icons used on the site are courtesy of IcoMoon and academicons (pubmed icon). Organism icons on the home page are made by Freepik from www.flaticon.com.
+Contributors and Team See contributors and team.</description>
     </item>
     
     <item>
@@ -286,8 +297,8 @@ Icons SVG icons used on the site are courtesy of IcoMoon and academicons (pubmed
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://intermine.org/tutorials/</guid>
-      <description>Here&amp;rsquo;s a short list of video tutorials produced by community members. If you&amp;rsquo;d like yours added to the list please contact us!
- FlyMine intro videos - for the Drosophila-minded among us. Thalemine tutorials - A. thaliana-based tutorials. TargetMine tutorials Tutorials for an InterMine designed to help identify drug targets. YeastMine videos - SGD has quite a broad range of tutorials based on S. Cerevisiae data. MouseMine at MGI - M.</description>
+      <description>Training workshops and Exercises We typically carry out a few training workshops each year - keep your eye on our calendar or [twitter feed]https://twitter.com/intermineorg) to find out when registration is open. The materials are available online and designed to be worked through in a self-led or tutor-led manner. These include:
+ Intro to data analysis with the InterMine user interface 🐍 Data analysis workflows in Python  Python Pax6 Workflow (unsolved):  Python Pax6 Workflow (with answers):   🇷 Data analysis workflows in R  R Pax6 Workflow (unsolved)  R Pax6 Workflow (with answers)   🇷 Advanced exercises: producing figures and data visualisations in R  Enrichment and visualisations (unsolved):  Enrichment and visualisations (with answers):    Videos Here&amp;rsquo;s a short list of video tutorials produced by community members.</description>
     </item>
     
   </channel>
