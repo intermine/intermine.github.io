@@ -84,6 +84,14 @@
   </url>
   
   <url>
+    <loc>http://intermine.org/community-calls/outreach-calls/</loc>
+  </url>
+  
+  <url>
+    <loc>http://intermine.org/community-calls/</loc>
+  </url>
+  
+  <url>
     <loc>http://intermine.org/contact/</loc>
   </url>
   
@@ -101,6 +109,10 @@
   
   <url>
     <loc>http://intermine.org/contributors/</loc>
+  </url>
+  
+  <url>
+    <loc>http://intermine.org/community-calls/developer-calls/</loc>
   </url>
   
   <url>
