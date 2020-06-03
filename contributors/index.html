@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -14,75 +14,106 @@
 
 <body>
     <header>
-  <div class="logo"><a href="http://intermine.org">
-      <img src="https://raw.githubusercontent.com/intermine/design-materials/ff1ec6bf/logos/intermine/intermine-300x37.png" width="300" height="37" alt="InterMine Home" /></a></div>
-  <nav tabindex="1">
+  <div class="logo">
+    <a href="http://intermine.org">
+      <img
+      src="https://raw.githubusercontent.com/intermine/design-materials/ff1ec6bf/logos/intermine/intermine-300x37.png"
+      width="300"
+      height="37"
+      alt="InterMine Home" />
+    </a>
+  </div>
+  <nav>
     <ul class="header-collapsible-nav" role="menubar">
-      <li class="navigation-menu-link">
+     <li class="navigation-menu-link" role="none">
         <svg class="icon icon-homepage">
           <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-menu"></use>
         </svg>
       </li>
     
-      <li tabindex="2" role="menu" aria-haspopup="true"> <h4 class="categories biologists">Biologists</h4>
-<ul>
+      <li role="menuitem"
+      aria-label="Biologists"
+      aria-haspopup="true"
+      aria-expanded="false"
+      > <h4
+class="categories biologists"
+tabindex="0"
+>Biologists</h4>
+
+<ul role="menu">
     
-    <li><a href="http://registry.intermine.org/">Which InterMine for my organism?
+    <li role="none"><a href="http://registry.intermine.org/" role="menuitem">Which InterMine for my organism?
             <svg class="icon icon-linkout">
             <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg></a></li>
-    <li><a href="http://intermine.org/tutorials">Tutorials and Videos</a></li>
-    <li><a href="http://flymine.readthedocs.io/en/latest/">User help documentation
+    <li role="none"><a href="http://intermine.org/tutorials" role="menuitem">Tutorials and Videos</a></li>
+    <li role="none"><a href="http://flymine.readthedocs.io/en/latest/" role="menuitem">User help documentation
             <svg class="icon icon-linkout">
-            <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg></a></li>
-    <li><a href="http://intermine.org/mobile-apps">Mobile Apps</a></li>
-    <li><a href="http://intermine.readthedocs.io/en/latest/web-services/#api-and-client-libraries">API Clients
+            <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink" role="menuitem"></use></svg></a></li>
+    <li role="none"><a href="http://intermine.org/mobile-apps" role="menuitem">Mobile Apps</a></li>
+    <li role="none"><a href="http://intermine.readthedocs.io/en/latest/web-services/#api-and-client-libraries" role="menuitem">API Clients
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
             </a></li>
 </ul>
-</li>
-      <li tabindex="3" role="menu" aria-haspopup="true"> <h4 class="categories developers">Developers</h4>
-<ul>
-    <li><a href="http://intermine.org/developers">Overview</a></li>
-    <li><a href="http://intermine.readthedocs.io/en/latest/">Developer docs &amp; getting started
+ <button id="closeNav" aria-label="Close">x</button></li>
+      <li role="menuitem"
+      aria-label="Developers"
+      aria-haspopup="true"
+      aria-expanded="false"
+      > <h4
+class="categories developers"
+tabindex="0"
+>Developers</h4>
+
+<ul role="menu">
+    <li role="none"><a href="http://intermine.org/developers" role="menuitem">Overview</a></li>
+    <li role="none"><a href="http://intermine.readthedocs.io/en/latest/"  role="menuitem">Developer docs &amp; getting started
         <svg class="icon icon-linkout">
             <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
         </a></li>
-    <li><a href="http://iodocs.apps.intermine.org/">API Docs
+    <li role="none"><a href="http://iodocs.apps.intermine.org/"  role="menuitem">API Docs
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
     </a></li>
-    <li><a href="http://registry.intermine.org/">InterMine Registry
+    <li role="none"><a href="http://registry.intermine.org/"  role="menuitem">InterMine Registry
         <svg class="icon icon-linkout">
             <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
         </a></li>
-    <li><a href="http://intermine.readthedocs.io/en/latest/web-services/#api-and-client-libraries">API Clients
+    <li role="none"><a href="http://intermine.readthedocs.io/en/latest/web-services/#api-and-client-libraries"  role="menuitem">API Clients
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
     </a></li>
-    <li><a href="https://lists.intermine.org/pipermail/dev/">Developer email list
+    <li role="none"><a href="https://lists.intermine.org/pipermail/dev/"  role="menuitem">Developer email list
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
     </a></li>
-    <li><a href="http://intermine.org/community-calls/developer-calls">Developer calls</a></li>
-    <li><a href="http://chat.intermine.org">Support chat
+    <li role="none"><a href="http://intermine.org/community-calls/developer-calls"  role="menuitem">Developer calls</a></li>
+    <li role="none"><a href="http://chat.intermine.org" role="menuitem">Support chat
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
     </a></li>
-    <li><a href="https://github.com/intermine">InterMine on GitHub
+    <li role="none"><a href="https://github.com/intermine"  role="menuitem">InterMine on GitHub
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
     </a></li>
-    <li><a href="http://intermine.org/contributing">Contributing guidelines</a></li>
+    <li  role="none"><a href="http://intermine.org/contributing"  role="menuitem">Contributing guidelines</a></li>
 
 </ul>
 </li>
-      <li tabindex="4" role="menu" aria-haspopup="true"> <h4 class="categories contact">Contact</h4>
-<ul>
-  <li><a href="/contact">
+      <li role="menuitem"
+      aria-label="Contact"
+      aria-haspopup="true"
+      aria-expanded="false"
+      > <h4
+class="categories contact"
+tabindex="0"
+>Contacts</h4>
+
+<ul role="menu">
+  <li role="none"><a href="/contact" role="menuitem">
       Overview
     </a></li>
-  <li><a href="https://intermineorg.wordpress.com/">
+  <li  role="none"><a href="https://intermineorg.wordpress.com/" role="menuitem">
       <svg class="icon icon-wordpress">
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-wordpress"></use>
       </svg>
@@ -91,7 +122,7 @@
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use>
       </svg>
     </a></li>
-  <li><a href="https://twitter.com/intermineorg">
+  <li  role="none"><a href="https://twitter.com/intermineorg" role="menuitem">
       <svg class="icon icon-twitter">
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-twitter"></use>
       </svg>
@@ -100,7 +131,7 @@
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use>
       </svg>
     </a></li>
-  <li><a href="https://lists.intermine.org/pipermail/dev/">
+  <li  role="none"><a href="https://lists.intermine.org/pipermail/dev/" role="menuitem">
       <svg class="icon icon-email">
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-email"></use>
       </svg>
@@ -109,7 +140,7 @@
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use>
       </svg>
     </a></li>
-  <li><a href="http://chat.intermine.org">
+  <li  role="none"><a href="http://chat.intermine.org" role="menuitem">
       <svg class="icon icon-chat">
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-chat"></use>
       </svg>
@@ -118,7 +149,7 @@
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use>
       </svg>
     </a></li>
-  <li><a href="https://github.com/intermine/intermine">
+  <li  role="none"><a href="https://github.com/intermine/intermine" role="menuitem">
       <svg class="icon icon-github">
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-github"></use>
       </svg>
@@ -128,13 +159,13 @@
       </svg>
     </a></li>
 
-  <li><a href="http://intermine.org/community-calls">
+  <li role=none><a href="http://intermine.org/community-calls" role="menuitem">
     <svg class="icon icon-phone">
       <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-phone"></use>
     </svg>
     Community calls</a></li>
 
-  <li><a href="mailto:info@intermine.org">
+  <li  role="none"><a href="mailto:info@intermine.org" role="menuitem">
       <svg class="icon icon-email">
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-email"></use>
       </svg>
@@ -144,28 +175,35 @@
       </svg></a></li>
 </ul>
  </li>
-      <li tabindex="5" role="menu" aria-haspopup="true"> <h4 class="categories resources">Resources</h4>
-<ul>
-    <li><a href="http://intermine.org/publications">Publications &amp; citing us</a></li>
-    <li><a href="http://intermine.org/team">About the team</a></li>
-    <li><a href="http://intermine.org/projects">Projects</a></li>
-    <li><a href="http://intermine.org/contributors">Contributors</a></li>
-    <li><a href="http://intermine.org/code-of-conduct">Code of Conduct</a></li>
-    <li><a href="https://intermineorg.wordpress.com/logos/">Logos &amp; branding
+      <li role="menuitem"
+      aria-label="Resources"
+      aria-haspopup="true"
+      aria-expanded="false"
+      > <h4
+class="categories resources"
+tabindex="0"
+>Resources</h4>
+
+<ul role="menu" class="sub-menu">
+    <li role="none"><a href="http://intermine.org/publications" role="menuitem">Publications &amp; citing us</a></li>
+    <li role="none"><a href="http://intermine.org/team" role="menuitem">About the team</a></li>
+    <li role="none"><a href="http://intermine.org/projects" role="menuitem">Projects</a></li>
+    <li role="none"><a href="http://intermine.org/contributors" role="menuitem">Contributors</a></li>
+    <li role="none"><a href="http://intermine.org/code-of-conduct" role="menuitem">Code of Conduct</a></li>
+    <li role="none"><a href="https://intermineorg.wordpress.com/logos/" role="menuitem">Logos &amp; branding
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg></a></li>
-    <li><a href="https://github.com/intermine">InterMine on GitHub
+    <li role="none"><a href="https://github.com/intermine" role="menuitem">InterMine on GitHub
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg></a></li>
-    <li><a href="https://intermineorg.wordpress.com/events/">Event Calendar
+    <li role="none"><a href="https://intermineorg.wordpress.com/events/" role="menuitem" >Event Calendar
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg></a></li>
-    <li><a href="http://intermine.readthedocs.io/en/latest/about/#privacy-policy">Privacy Policy
+    <li role="none"><a href="http://intermine.readthedocs.io/en/latest/about/#privacy-policy" role="menuitem">Privacy Policy
             <svg class="icon icon-linkout">
             <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg></a></li>
 </ul>
  </li>
-        <li id="close-nav-container"> <button id="closeNav" aria-label="Close">x</button></li>
     </ul>
   </nav>
 </header>
@@ -194,7 +232,7 @@
                       
                         <li>
                           <a href="http://github.com/julie-sullivan/" class="github">
-                            <img src="https://avatars2.githubusercontent.com/u/1663057?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars2.githubusercontent.com/u/1663057?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Julie Sullivan
@@ -203,7 +241,7 @@
                       
                         <li>
                           <a href="https://github.com/justinccdev" class="github">
-                            <img src="https://avatars0.githubusercontent.com/u/12761716?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars0.githubusercontent.com/u/12761716?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Justin Clark-Casey
@@ -212,7 +250,7 @@
                       
                         <li>
                           <a href="https://github.com/joshkh" class="github">
-                            <img src="https://avatars3.githubusercontent.com/u/4752532?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars3.githubusercontent.com/u/4752532?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Josh Heimbach
@@ -221,7 +259,7 @@
                       
                         <li>
                           <a href="https://github.com/Hendekagon" class="github">
-                            <img src="https://avatars3.githubusercontent.com/u/1166529?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars3.githubusercontent.com/u/1166529?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Matthew Chadwick
@@ -230,7 +268,7 @@
                       
                         <li>
                           <a href="https://github.com/alexkalderimis" class="github">
-                            <img src="https://avatars2.githubusercontent.com/u/436846?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars2.githubusercontent.com/u/436846?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Alex Kalderimis
@@ -239,7 +277,7 @@
                       
                         <li>
                           <a href="https://github.com/boboppie" class="github">
-                            <img src="https://avatars2.githubusercontent.com/u/543789?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars2.githubusercontent.com/u/543789?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Fengyuan Hu
@@ -248,7 +286,7 @@
                       
                         <li>
                           <a href="https://github.com/radekstepan" class="github">
-                            <img src="https://avatars0.githubusercontent.com/u/195584?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars0.githubusercontent.com/u/195584?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Radek Stepan
@@ -257,7 +295,7 @@
                       
                         <li>
                           <a href="https://github.com/rnsmith" class="github">
-                            <img src="https://avatars0.githubusercontent.com/u/1056125?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars0.githubusercontent.com/u/1056125?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Richard Smith
@@ -266,7 +304,7 @@
                       
                         <li>
                           <a href="https://github.com/mlyne" class="github">
-                            <img src="https://avatars1.githubusercontent.com/u/1152769?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars1.githubusercontent.com/u/1152769?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Mike Lyne
@@ -283,7 +321,7 @@
                       
                         <li>
                           <a href="https://github.com/JM-Mendez" class="github">
-                            <img src="https://avatars0.githubusercontent.com/u/24993360?s=400&amp;u=60d3e1bec82bcb44139629a6aeb4b539e5be9f56&amp;v=4" width="113" height="113"/>                            
+                            <img src="https://avatars0.githubusercontent.com/u/24993360?s=400&amp;u=60d3e1bec82bcb44139629a6aeb4b539e5be9f56&amp;v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               John Mendez
@@ -292,7 +330,7 @@
                       
                         <li>
                           <a href="https://github.com/Sakshisrivastava413" class="github">
-                            <img src="https://avatars1.githubusercontent.com/u/32509093?s=400&amp;u=7476d4f4a1cd10d37ebcd8c818bd4dc65534b714&amp;v=4" width="113" height="113"/>                            
+                            <img src="https://avatars1.githubusercontent.com/u/32509093?s=400&amp;u=7476d4f4a1cd10d37ebcd8c818bd4dc65534b714&amp;v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Sakshi Srivastava
@@ -301,7 +339,7 @@
                       
                         <li>
                           <a href="https://github.com/Persdre" class="github">
-                            <img src="https://avatars2.githubusercontent.com/u/35624031?s=400&amp;u=529fa046f5f81d295fb6dd01b168e47096aaebf6&amp;v=4" width="113" height="113"/>                            
+                            <img src="https://avatars2.githubusercontent.com/u/35624031?s=400&amp;u=529fa046f5f81d295fb6dd01b168e47096aaebf6&amp;v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Qian Wang
@@ -310,7 +348,7 @@
                       
                         <li>
                           <a href="https://github.com/22PoojaGaur" class="github">
-                            <img src="https://avatars1.githubusercontent.com/u/43316760?s=400&amp;u=e01658d8f5af0e4ca9012d2508a3888b9de6b091&amp;v=4" width="113" height="113"/>                            
+                            <img src="https://avatars1.githubusercontent.com/u/43316760?s=400&amp;u=e01658d8f5af0e4ca9012d2508a3888b9de6b091&amp;v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Pooja Gaur
@@ -319,7 +357,7 @@
                       
                         <li>
                           <a href="https://github.com/tinycosmos" class="github">
-                            <img src="https://avatars0.githubusercontent.com/u/45714224?s=400&amp;u=bdfe2e5f835051b9a023945dbbda25ed80fc55f0&amp;v=4" width="113" height="113"/>                            
+                            <img src="https://avatars0.githubusercontent.com/u/45714224?s=400&amp;u=bdfe2e5f835051b9a023945dbbda25ed80fc55f0&amp;v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Roshni_18 
@@ -336,7 +374,7 @@
                       
                         <li>
                           <a href="https://github.com/leoank/" class="github">
-                            <img src="https://avatars1.githubusercontent.com/u/22383963?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars1.githubusercontent.com/u/22383963?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Ankur Kumar
@@ -345,7 +383,7 @@
                       
                         <li>
                           <a href="https://github.com/PKatGITHUB" class="github">
-                            <img src="https://avatars2.githubusercontent.com/u/16065928?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars2.githubusercontent.com/u/16065928?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Prabodh Kotasthane
@@ -354,7 +392,7 @@
                       
                         <li>
                           <a href="https://github.com/rahul-y" class="github">
-                            <img src="https://avatars3.githubusercontent.com/u/23416393?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars3.githubusercontent.com/u/23416393?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Rahul Yadav
@@ -363,7 +401,7 @@
                       
                         <li>
                           <a href="https://github.com/deepakkumar96" class="github">
-                            <img src="https://avatars2.githubusercontent.com/u/17297948?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars2.githubusercontent.com/u/17297948?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Deepak Kumar
@@ -372,7 +410,7 @@
                       
                         <li>
                           <a href="https://github.com/akshatbhargava123" class="github">
-                            <img src="https://avatars1.githubusercontent.com/u/22184427?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars1.githubusercontent.com/u/22184427?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Akshat Bhargava
@@ -381,7 +419,7 @@
                       
                         <li>
                           <a href="https://github.com/lakshsingla" class="github">
-                            <img src="https://avatars2.githubusercontent.com/u/30999375?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars2.githubusercontent.com/u/30999375?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Laksh Singla
@@ -398,7 +436,7 @@
                       
                         <li>
                           <a href="https://github.com/amand1996/" class="github">
-                            <img src="https://avatars0.githubusercontent.com/u/9645180?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars0.githubusercontent.com/u/9645180?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Aman Dwivedi
@@ -407,7 +445,7 @@
                       
                         <li>
                           <a href="https://github.com/adrianbzg" class="github">
-                            <img src="https://avatars0.githubusercontent.com/u/8275330?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars0.githubusercontent.com/u/8275330?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Adrián Rodríguez Bazaga
@@ -416,7 +454,7 @@
                       
                         <li>
                           <a href="https://github.com/arunans23" class="github">
-                            <img src="https://avatars0.githubusercontent.com/u/17047910?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars0.githubusercontent.com/u/17047910?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Arunan Sugunakumar
@@ -425,7 +463,7 @@
                       
                         <li>
                           <a href="https://github.com/jmacneal" class="github">
-                            <img src="https://avatars0.githubusercontent.com/u/4195776?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars0.githubusercontent.com/u/4195776?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Jake Macneal
@@ -434,7 +472,7 @@
                       
                         <li>
                           <a href="https://github.com/nupurgunwant" class="github">
-                            <img src="https://avatars0.githubusercontent.com/u/19436036?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars0.githubusercontent.com/u/19436036?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Nupur Gunwant
@@ -443,7 +481,7 @@
                       
                         <li>
                           <a href="https://github.com/innovationchef" class="github">
-                            <img src="https://avatars0.githubusercontent.com/u/18079078?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars0.githubusercontent.com/u/18079078?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Ankit Lohani
@@ -460,7 +498,7 @@
                       
                         <li>
                           <a href="https://github.com/nadia-dev/" class="github">
-                            <img src="https://avatars1.githubusercontent.com/u/3505021?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars1.githubusercontent.com/u/3505021?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Nadia Yudina
@@ -469,7 +507,7 @@
                       
                         <li>
                           <a href="https://github.com/samyadeepbasu" class="github">
-                            <img src="https://avatars0.githubusercontent.com/u/11061167?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars0.githubusercontent.com/u/11061167?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Samyadeep Basu
@@ -478,7 +516,7 @@
                       
                         <li>
                           <a href="https://github.com/kostaskyritsis" class="github">
-                            <img src="https://avatars0.githubusercontent.com/u/9789413?v=4&amp;s=460" width="113" height="113"/>                            
+                            <img src="https://avatars0.githubusercontent.com/u/9789413?v=4&amp;s=460" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Konstantinos Krytsis
@@ -487,7 +525,7 @@
                       
                         <li>
                           <a href="https://github.com/yasharmaster" class="github">
-                            <img src="https://avatars1.githubusercontent.com/u/11594708?v=4&amp;s=460" width="113" height="113"/>                            
+                            <img src="https://avatars1.githubusercontent.com/u/11594708?v=4&amp;s=460" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Yash Sharma
@@ -496,7 +534,7 @@
                       
                         <li>
                           <a href="https://github.com/lkuffo" class="github">
-                            <img src="https://avatars3.githubusercontent.com/u/21977298?v=4&amp;s=460" width="113" height="113"/>                            
+                            <img src="https://avatars3.githubusercontent.com/u/21977298?v=4&amp;s=460" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Leonardo Xavier Kuffo Rivero
@@ -513,7 +551,7 @@
                       
                         <li>
                           <a href="https://github.com/dmahajan980" class="github">
-                            <img src="https://avatars.githubusercontent.com/dmahajan980" width="113" height="113"/>                            
+                            <img src="https://avatars.githubusercontent.com/dmahajan980" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Divyanshu Mahajan
@@ -522,7 +560,7 @@
                       
                         <li>
                           <a href="https://github.com/sammyjava" class="github">
-                            <img src="https://avatars1.githubusercontent.com/u/5657219?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars1.githubusercontent.com/u/5657219?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               sammyjava
@@ -531,7 +569,7 @@
                       
                         <li>
                           <a href="https://github.com/JoeCarlson" class="github">
-                            <img src="https://avatars1.githubusercontent.com/u/3506317?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars1.githubusercontent.com/u/3506317?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               JoeCarlson
@@ -540,7 +578,7 @@
                       
                         <li>
                           <a href="https://github.com/sneuhaus" class="github">
-                            <img src="https://avatars3.githubusercontent.com/u/1580103?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars3.githubusercontent.com/u/1580103?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               sneuhaus
@@ -549,7 +587,7 @@
                       
                         <li>
                           <a href="https://github.com/JoelRichardson" class="github">
-                            <img src="https://avatars0.githubusercontent.com/u/1064767?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars0.githubusercontent.com/u/1064767?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               JoelRichardson
@@ -558,7 +596,7 @@
                       
                         <li>
                           <a href="https://github.com/cmdcolin" class="github">
-                            <img src="https://avatars0.githubusercontent.com/u/6511937?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars0.githubusercontent.com/u/6511937?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               cmdcolin
@@ -567,7 +605,7 @@
                       
                         <li>
                           <a href="https://github.com/vivekkrish" class="github">
-                            <img src="https://avatars3.githubusercontent.com/u/711637?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars3.githubusercontent.com/u/711637?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               vivekkrish
@@ -576,7 +614,7 @@
                       
                         <li>
                           <a href="https://github.com/arremb" class="github">
-                            <img src="https://avatars2.githubusercontent.com/u/10436842?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars2.githubusercontent.com/u/10436842?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               arremb
@@ -585,7 +623,7 @@
                       
                         <li>
                           <a href="https://github.com/David-Sharkey" class="github">
-                            <img src="https://avatars0.githubusercontent.com/u/26486833?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars0.githubusercontent.com/u/26486833?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               David-Sharkey
@@ -594,7 +632,7 @@
                       
                         <li>
                           <a href="https://github.com/jogoodma" class="github">
-                            <img src="https://avatars3.githubusercontent.com/u/727481?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars3.githubusercontent.com/u/727481?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               jogoodma
@@ -603,7 +641,7 @@
                       
                         <li>
                           <a href="https://github.com/nuin" class="github">
-                            <img src="https://avatars3.githubusercontent.com/u/6273?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars3.githubusercontent.com/u/6273?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               nuin
@@ -612,7 +650,7 @@
                       
                         <li>
                           <a href="https://github.com/chenyian-nibio" class="github">
-                            <img src="https://avatars0.githubusercontent.com/u/2101911?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars0.githubusercontent.com/u/2101911?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               chenyian-nibio
@@ -621,7 +659,7 @@
                       
                         <li>
                           <a href="https://github.com/widdowquinn" class="github">
-                            <img src="https://avatars1.githubusercontent.com/u/63981?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars1.githubusercontent.com/u/63981?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               widdowquinn
@@ -630,7 +668,7 @@
                       
                         <li>
                           <a href="https://github.com/deepakunni3" class="github">
-                            <img src="https://avatars2.githubusercontent.com/u/4530272?v=4&amp;s=460" width="113" height="113"/>                            
+                            <img src="https://avatars2.githubusercontent.com/u/4530272?v=4&amp;s=460" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               deepakunni3
@@ -639,7 +677,7 @@
                       
                         <li>
                           <a href="https://github.com/stairs" class="github">
-                            <img src="https://avatars1.githubusercontent.com/u/6586371?v=4&amp;s=460" width="113" height="113"/>                            
+                            <img src="https://avatars1.githubusercontent.com/u/6586371?v=4&amp;s=460" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               stairs
@@ -648,7 +686,7 @@
                       
                         <li>
                           <a href="https://github.com/samarth1397" class="github">
-                            <img src="https://avatars0.githubusercontent.com/u/15622990?v=4&amp;s=460" width="113" height="113"/>                            
+                            <img src="https://avatars0.githubusercontent.com/u/15622990?v=4&amp;s=460" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               samarth1397
@@ -657,7 +695,7 @@
                       
                         <li>
                           <a href="https://github.com/sierra-moxon" class="github">
-                            <img src="https://avatars1.githubusercontent.com/u/4561292?v=4&amp;s=460" width="113" height="113"/>                            
+                            <img src="https://avatars1.githubusercontent.com/u/4561292?v=4&amp;s=460" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               sierra-moxon
@@ -666,7 +704,7 @@
                       
                         <li>
                           <a href="https://github.com/kkarra" class="github">
-                            <img src="https://avatars2.githubusercontent.com/u/1929885?v=4&amp;s=460" width="113" height="113"/>                            
+                            <img src="https://avatars2.githubusercontent.com/u/1929885?v=4&amp;s=460" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               kkarra
@@ -675,7 +713,7 @@
                       
                         <li>
                           <a href="https://github.com/himanshukumar660" class="github">
-                            <img src="https://avatars2.githubusercontent.com/u/16867533?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars2.githubusercontent.com/u/16867533?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Himanshu Kumar
@@ -684,7 +722,7 @@
                       
                         <li>
                           <a href="https://github.com/flaredragon" class="github">
-                            <img src="https://avatars3.githubusercontent.com/u/29121452?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars3.githubusercontent.com/u/29121452?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Akashdeep Ramnaney
@@ -693,7 +731,7 @@
                       
                         <li>
                           <a href="https://github.com/CoryWritesCode" class="github">
-                            <img src="https://avatars1.githubusercontent.com/u/34924300?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars1.githubusercontent.com/u/34924300?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Cory Cunningham
@@ -702,7 +740,7 @@
                       
                         <li>
                           <a href="https://github.com/himanshuc3" class="github">
-                            <img src="https://avatars2.githubusercontent.com/u/19166045?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars2.githubusercontent.com/u/19166045?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Himanshu
@@ -711,7 +749,7 @@
                       
                         <li>
                           <a href="https://github.com/hollloh" class="github">
-                            <img src="https://avatars2.githubusercontent.com/u/26636039?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars2.githubusercontent.com/u/26636039?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               holoh
@@ -720,7 +758,7 @@
                       
                         <li>
                           <a href="https://github.com/VarunBhandia" class="github">
-                            <img src="https://avatars1.githubusercontent.com/u/27995669?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars1.githubusercontent.com/u/27995669?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Varun Bhandia
@@ -729,7 +767,7 @@
                       
                         <li>
                           <a href="https://github.com/omi10859" class="github">
-                            <img src="https://avatars2.githubusercontent.com/u/45539371?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars2.githubusercontent.com/u/45539371?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Omkar
@@ -738,7 +776,7 @@
                       
                         <li>
                           <a href="https://github.com/Sanat-Mishra" class="github">
-                            <img src="https://avatars1.githubusercontent.com/u/19981230?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars1.githubusercontent.com/u/19981230?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Sanat Mishra
@@ -747,7 +785,7 @@
                       
                         <li>
                           <a href="https://github.com/vobencha" class="github">
-                            <img src="https://avatars3.githubusercontent.com/u/2466173?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars3.githubusercontent.com/u/2466173?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Valerie Obenchain
@@ -756,7 +794,7 @@
                       
                         <li>
                           <a href="https://github.com/nturaga" class="github">
-                            <img src="https://avatars0.githubusercontent.com/u/2746443?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars0.githubusercontent.com/u/2746443?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Nitesh Turaga
@@ -765,7 +803,7 @@
                       
                         <li>
                           <a href="https://github.com/hpages" class="github">
-                            <img src="https://avatars2.githubusercontent.com/u/8810451?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars2.githubusercontent.com/u/8810451?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Hervé Pagès
@@ -774,7 +812,7 @@
                       
                         <li>
                           <a href="https://github.com/LiNk-NY" class="github">
-                            <img src="https://avatars1.githubusercontent.com/u/4392950?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars1.githubusercontent.com/u/4392950?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Marcel Ramos
@@ -783,7 +821,7 @@
                       
                         <li>
                           <a href="https://github.com/sowla" class="github">
-                            <img src="https://avatars0.githubusercontent.com/u/19764028?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars0.githubusercontent.com/u/19764028?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Suthira
@@ -792,7 +830,7 @@
                       
                         <li>
                           <a href="https://github.com/allentiak" class="github">
-                            <img src="https://avatars0.githubusercontent.com/u/1922297?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars0.githubusercontent.com/u/1922297?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Leandro Doctors
@@ -801,7 +839,7 @@
                       
                         <li>
                           <a href="https://github.com/sehgalvibhor" class="github">
-                            <img src="https://avatars2.githubusercontent.com/u/10993808?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars2.githubusercontent.com/u/10993808?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Vibhor Sehgal
@@ -810,7 +848,7 @@
                       
                         <li>
                           <a href="https://github.com/tripq" class="github">
-                            <img src="https://avatars0.githubusercontent.com/u/17712060?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars0.githubusercontent.com/u/17712060?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Tripp Horbinski
@@ -819,7 +857,7 @@
                       
                         <li>
                           <a href="https://github.com/harleo" class="github">
-                            <img src="https://avatars2.githubusercontent.com/u/18539354?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars2.githubusercontent.com/u/18539354?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Leo
@@ -828,7 +866,7 @@
                       
                         <li>
                           <a href="https://github.com/gdevincenzi" class="github">
-                            <img src="https://avatars0.githubusercontent.com/u/26184196?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars0.githubusercontent.com/u/26184196?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Guilherme Devincenzi
@@ -837,7 +875,7 @@
                       
                         <li>
                           <a href="https://github.com/artiemq" class="github">
-                            <img src="https://avatars2.githubusercontent.com/u/21139056?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars2.githubusercontent.com/u/21139056?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Artem Krinitsyn
@@ -846,7 +884,7 @@
                       
                         <li>
                           <a href="https://github.com/MattMattV" class="github">
-                            <img src="https://avatars3.githubusercontent.com/u/6715182?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars3.githubusercontent.com/u/6715182?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Matthieu Vion
@@ -855,7 +893,7 @@
                       
                         <li>
                           <a href="https://github.com/CodHeK" class="github">
-                            <img src="https://avatars2.githubusercontent.com/u/22097366?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars2.githubusercontent.com/u/22097366?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Gagan Ganapathy
@@ -864,7 +902,7 @@
                       
                         <li>
                           <a href="https://github.com/XiangpengHao" class="github">
-                            <img src="https://avatars0.githubusercontent.com/u/6504314?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars0.githubusercontent.com/u/6504314?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Xiangpeng Hao
@@ -873,7 +911,7 @@
                       
                         <li>
                           <a href="https://github.com/aditokar" class="github">
-                            <img src="https://avatars1.githubusercontent.com/u/16613832?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars1.githubusercontent.com/u/16613832?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               Aditya Tokar
@@ -882,7 +920,7 @@
                       
                         <li>
                           <a href="https://github.com/KukkadapuSushma" class="github">
-                            <img src="https://avatars2.githubusercontent.com/u/14278142?v=4" width="113" height="113"/>                            
+                            <img src="https://avatars2.githubusercontent.com/u/14278142?v=4" alt="Members or contributors profile" width="113" height="113"/>                            
                             <span>
                               <svg class="icon icon-github"><use xlink:href='http://intermine.org/images/symbol-defs.svg#icon-github'></use></svg>
                               SushmaK
@@ -897,18 +935,22 @@
 
     <footer>
     <div class="sitemap-link-group biologists">
-        <h4 class="categories biologists">Biologists</h4>
-<ul>
+        <h4
+class="categories biologists"
+tabindex="0"
+>Biologists</h4>
+
+<ul role="menu">
     
-    <li><a href="http://registry.intermine.org/">Which InterMine for my organism?
+    <li role="none"><a href="http://registry.intermine.org/" role="menuitem">Which InterMine for my organism?
             <svg class="icon icon-linkout">
             <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg></a></li>
-    <li><a href="http://intermine.org/tutorials">Tutorials and Videos</a></li>
-    <li><a href="http://flymine.readthedocs.io/en/latest/">User help documentation
+    <li role="none"><a href="http://intermine.org/tutorials" role="menuitem">Tutorials and Videos</a></li>
+    <li role="none"><a href="http://flymine.readthedocs.io/en/latest/" role="menuitem">User help documentation
             <svg class="icon icon-linkout">
-            <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg></a></li>
-    <li><a href="http://intermine.org/mobile-apps">Mobile Apps</a></li>
-    <li><a href="http://intermine.readthedocs.io/en/latest/web-services/#api-and-client-libraries">API Clients
+            <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink" role="menuitem"></use></svg></a></li>
+    <li role="none"><a href="http://intermine.org/mobile-apps" role="menuitem">Mobile Apps</a></li>
+    <li role="none"><a href="http://intermine.readthedocs.io/en/latest/web-services/#api-and-client-libraries" role="menuitem">API Clients
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
             </a></li>
@@ -918,50 +960,58 @@
     
     </div>
     <div class="sitemap-link-group developers">
-            <h4 class="categories developers">Developers</h4>
-<ul>
-    <li><a href="http://intermine.org/developers">Overview</a></li>
-    <li><a href="http://intermine.readthedocs.io/en/latest/">Developer docs &amp; getting started
+            <h4
+class="categories developers"
+tabindex="0"
+>Developers</h4>
+
+<ul role="menu">
+    <li role="none"><a href="http://intermine.org/developers" role="menuitem">Overview</a></li>
+    <li role="none"><a href="http://intermine.readthedocs.io/en/latest/"  role="menuitem">Developer docs &amp; getting started
         <svg class="icon icon-linkout">
             <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
         </a></li>
-    <li><a href="http://iodocs.apps.intermine.org/">API Docs
+    <li role="none"><a href="http://iodocs.apps.intermine.org/"  role="menuitem">API Docs
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
     </a></li>
-    <li><a href="http://registry.intermine.org/">InterMine Registry
+    <li role="none"><a href="http://registry.intermine.org/"  role="menuitem">InterMine Registry
         <svg class="icon icon-linkout">
             <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
         </a></li>
-    <li><a href="http://intermine.readthedocs.io/en/latest/web-services/#api-and-client-libraries">API Clients
+    <li role="none"><a href="http://intermine.readthedocs.io/en/latest/web-services/#api-and-client-libraries"  role="menuitem">API Clients
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
     </a></li>
-    <li><a href="https://lists.intermine.org/pipermail/dev/">Developer email list
+    <li role="none"><a href="https://lists.intermine.org/pipermail/dev/"  role="menuitem">Developer email list
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
     </a></li>
-    <li><a href="http://intermine.org/community-calls/developer-calls">Developer calls</a></li>
-    <li><a href="http://chat.intermine.org">Support chat
+    <li role="none"><a href="http://intermine.org/community-calls/developer-calls"  role="menuitem">Developer calls</a></li>
+    <li role="none"><a href="http://chat.intermine.org" role="menuitem">Support chat
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
     </a></li>
-    <li><a href="https://github.com/intermine">InterMine on GitHub
+    <li role="none"><a href="https://github.com/intermine"  role="menuitem">InterMine on GitHub
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
     </a></li>
-    <li><a href="http://intermine.org/contributing">Contributing guidelines</a></li>
+    <li  role="none"><a href="http://intermine.org/contributing"  role="menuitem">Contributing guidelines</a></li>
 
 </ul>
 
         </div>
         <div class="sitemap-link-group contact">
-                <h4 class="categories contact">Contact</h4>
-<ul>
-  <li><a href="/contact">
+                <h4
+class="categories contact"
+tabindex="0"
+>Contacts</h4>
+
+<ul role="menu">
+  <li role="none"><a href="/contact" role="menuitem">
       Overview
     </a></li>
-  <li><a href="https://intermineorg.wordpress.com/">
+  <li  role="none"><a href="https://intermineorg.wordpress.com/" role="menuitem">
       <svg class="icon icon-wordpress">
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-wordpress"></use>
       </svg>
@@ -970,7 +1020,7 @@
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use>
       </svg>
     </a></li>
-  <li><a href="https://twitter.com/intermineorg">
+  <li  role="none"><a href="https://twitter.com/intermineorg" role="menuitem">
       <svg class="icon icon-twitter">
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-twitter"></use>
       </svg>
@@ -979,7 +1029,7 @@
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use>
       </svg>
     </a></li>
-  <li><a href="https://lists.intermine.org/pipermail/dev/">
+  <li  role="none"><a href="https://lists.intermine.org/pipermail/dev/" role="menuitem">
       <svg class="icon icon-email">
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-email"></use>
       </svg>
@@ -988,7 +1038,7 @@
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use>
       </svg>
     </a></li>
-  <li><a href="http://chat.intermine.org">
+  <li  role="none"><a href="http://chat.intermine.org" role="menuitem">
       <svg class="icon icon-chat">
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-chat"></use>
       </svg>
@@ -997,7 +1047,7 @@
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use>
       </svg>
     </a></li>
-  <li><a href="https://github.com/intermine/intermine">
+  <li  role="none"><a href="https://github.com/intermine/intermine" role="menuitem">
       <svg class="icon icon-github">
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-github"></use>
       </svg>
@@ -1007,13 +1057,13 @@
       </svg>
     </a></li>
 
-  <li><a href="http://intermine.org/community-calls">
+  <li role=none><a href="http://intermine.org/community-calls" role="menuitem">
     <svg class="icon icon-phone">
       <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-phone"></use>
     </svg>
     Community calls</a></li>
 
-  <li><a href="mailto:info@intermine.org">
+  <li  role="none"><a href="mailto:info@intermine.org" role="menuitem">
       <svg class="icon icon-email">
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-email"></use>
       </svg>
@@ -1025,23 +1075,27 @@
 
             </div>
             <div class="sitemap-link-group resources">
-        <h4 class="categories resources">Resources</h4>
-<ul>
-    <li><a href="http://intermine.org/publications">Publications &amp; citing us</a></li>
-    <li><a href="http://intermine.org/team">About the team</a></li>
-    <li><a href="http://intermine.org/projects">Projects</a></li>
-    <li><a href="http://intermine.org/contributors">Contributors</a></li>
-    <li><a href="http://intermine.org/code-of-conduct">Code of Conduct</a></li>
-    <li><a href="https://intermineorg.wordpress.com/logos/">Logos &amp; branding
+        <h4
+class="categories resources"
+tabindex="0"
+>Resources</h4>
+
+<ul role="menu" class="sub-menu">
+    <li role="none"><a href="http://intermine.org/publications" role="menuitem">Publications &amp; citing us</a></li>
+    <li role="none"><a href="http://intermine.org/team" role="menuitem">About the team</a></li>
+    <li role="none"><a href="http://intermine.org/projects" role="menuitem">Projects</a></li>
+    <li role="none"><a href="http://intermine.org/contributors" role="menuitem">Contributors</a></li>
+    <li role="none"><a href="http://intermine.org/code-of-conduct" role="menuitem">Code of Conduct</a></li>
+    <li role="none"><a href="https://intermineorg.wordpress.com/logos/" role="menuitem">Logos &amp; branding
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg></a></li>
-    <li><a href="https://github.com/intermine">InterMine on GitHub
+    <li role="none"><a href="https://github.com/intermine" role="menuitem">InterMine on GitHub
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg></a></li>
-    <li><a href="https://intermineorg.wordpress.com/events/">Event Calendar
+    <li role="none"><a href="https://intermineorg.wordpress.com/events/" role="menuitem" >Event Calendar
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg></a></li>
-    <li><a href="http://intermine.readthedocs.io/en/latest/about/#privacy-policy">Privacy Policy
+    <li role="none"><a href="http://intermine.readthedocs.io/en/latest/about/#privacy-policy" role="menuitem">Privacy Policy
             <svg class="icon icon-linkout">
             <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg></a></li>
 </ul>
@@ -1057,12 +1111,12 @@
         </div>
         <h5 class="subheading">Affiliations</h5>
         <div class="affiliation-logos">
-            <a href="https://elixir-europe.org/platforms/interoperability/rirs"><img src="http://intermine.org/images/elixirRIR.png" 
+            <a href="https://elixir-europe.org/platforms/interoperability/rirs"><img src="http://intermine.org/images/elixirRIR.png"
                 alt="Elixir-Europe Recommended Interoperability Resources" width="105" height="100"/></a>
             <a href="http://www.elixir-uk.org/"><img src="http://intermine.org/images/elixir-uk-logo1.png" alt="InterMine is an ELIXIR-UK resource" width="100" height="105" /></a>
             <a href="https://www.gen.cam.ac.uk/"><img src="http://intermine.org/images/cambridge-logo.png" alt="Part of the University of Cambridge" width="202" height="42" /></a>
         </div>
-        <div><a href="http://intermine.org/credits">Credits</div>
+        <div><a href="http://intermine.org/credits">Credits</a></div>
         <br/>
     </div>
 </footer>

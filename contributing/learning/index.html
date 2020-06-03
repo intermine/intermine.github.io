@@ -14,75 +14,106 @@
 
 <body>
   <header>
-  <div class="logo"><a href="http://intermine.org">
-      <img src="https://raw.githubusercontent.com/intermine/design-materials/ff1ec6bf/logos/intermine/intermine-300x37.png" width="300" height="37" alt="InterMine Home" /></a></div>
-  <nav tabindex="1">
+  <div class="logo">
+    <a href="http://intermine.org">
+      <img
+      src="https://raw.githubusercontent.com/intermine/design-materials/ff1ec6bf/logos/intermine/intermine-300x37.png"
+      width="300"
+      height="37"
+      alt="InterMine Home" />
+    </a>
+  </div>
+  <nav>
     <ul class="header-collapsible-nav" role="menubar">
-      <li class="navigation-menu-link">
+     <li class="navigation-menu-link" role="none">
         <svg class="icon icon-homepage">
           <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-menu"></use>
         </svg>
       </li>
     
-      <li tabindex="2" role="menu" aria-haspopup="true"> <h4 class="categories biologists">Biologists</h4>
-<ul>
+      <li role="menuitem"
+      aria-label="Biologists"
+      aria-haspopup="true"
+      aria-expanded="false"
+      > <h4
+class="categories biologists"
+tabindex="0"
+>Biologists</h4>
+
+<ul role="menu">
     
-    <li><a href="http://registry.intermine.org/">Which InterMine for my organism?
+    <li role="none"><a href="http://registry.intermine.org/" role="menuitem">Which InterMine for my organism?
             <svg class="icon icon-linkout">
             <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg></a></li>
-    <li><a href="http://intermine.org/tutorials">Tutorials and Videos</a></li>
-    <li><a href="http://flymine.readthedocs.io/en/latest/">User help documentation
+    <li role="none"><a href="http://intermine.org/tutorials" role="menuitem">Tutorials and Videos</a></li>
+    <li role="none"><a href="http://flymine.readthedocs.io/en/latest/" role="menuitem">User help documentation
             <svg class="icon icon-linkout">
-            <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg></a></li>
-    <li><a href="http://intermine.org/mobile-apps">Mobile Apps</a></li>
-    <li><a href="http://intermine.readthedocs.io/en/latest/web-services/#api-and-client-libraries">API Clients
+            <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink" role="menuitem"></use></svg></a></li>
+    <li role="none"><a href="http://intermine.org/mobile-apps" role="menuitem">Mobile Apps</a></li>
+    <li role="none"><a href="http://intermine.readthedocs.io/en/latest/web-services/#api-and-client-libraries" role="menuitem">API Clients
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
             </a></li>
 </ul>
-</li>
-      <li tabindex="3" role="menu" aria-haspopup="true"> <h4 class="categories developers">Developers</h4>
-<ul>
-    <li><a href="http://intermine.org/developers">Overview</a></li>
-    <li><a href="http://intermine.readthedocs.io/en/latest/">Developer docs &amp; getting started
+ <button id="closeNav" aria-label="Close">x</button></li>
+      <li role="menuitem"
+      aria-label="Developers"
+      aria-haspopup="true"
+      aria-expanded="false"
+      > <h4
+class="categories developers"
+tabindex="0"
+>Developers</h4>
+
+<ul role="menu">
+    <li role="none"><a href="http://intermine.org/developers" role="menuitem">Overview</a></li>
+    <li role="none"><a href="http://intermine.readthedocs.io/en/latest/"  role="menuitem">Developer docs &amp; getting started
         <svg class="icon icon-linkout">
             <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
         </a></li>
-    <li><a href="http://iodocs.apps.intermine.org/">API Docs
+    <li role="none"><a href="http://iodocs.apps.intermine.org/"  role="menuitem">API Docs
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
     </a></li>
-    <li><a href="http://registry.intermine.org/">InterMine Registry
+    <li role="none"><a href="http://registry.intermine.org/"  role="menuitem">InterMine Registry
         <svg class="icon icon-linkout">
             <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
         </a></li>
-    <li><a href="http://intermine.readthedocs.io/en/latest/web-services/#api-and-client-libraries">API Clients
+    <li role="none"><a href="http://intermine.readthedocs.io/en/latest/web-services/#api-and-client-libraries"  role="menuitem">API Clients
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
     </a></li>
-    <li><a href="https://lists.intermine.org/pipermail/dev/">Developer email list
+    <li role="none"><a href="https://lists.intermine.org/pipermail/dev/"  role="menuitem">Developer email list
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
     </a></li>
-    <li><a href="http://intermine.org/community-calls/developer-calls">Developer calls</a></li>
-    <li><a href="http://chat.intermine.org">Support chat
+    <li role="none"><a href="http://intermine.org/community-calls/developer-calls"  role="menuitem">Developer calls</a></li>
+    <li role="none"><a href="http://chat.intermine.org" role="menuitem">Support chat
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
     </a></li>
-    <li><a href="https://github.com/intermine">InterMine on GitHub
+    <li role="none"><a href="https://github.com/intermine"  role="menuitem">InterMine on GitHub
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
     </a></li>
-    <li><a href="http://intermine.org/contributing">Contributing guidelines</a></li>
+    <li  role="none"><a href="http://intermine.org/contributing"  role="menuitem">Contributing guidelines</a></li>
 
 </ul>
 </li>
-      <li tabindex="4" role="menu" aria-haspopup="true"> <h4 class="categories contact">Contact</h4>
-<ul>
-  <li><a href="/contact">
+      <li role="menuitem"
+      aria-label="Contact"
+      aria-haspopup="true"
+      aria-expanded="false"
+      > <h4
+class="categories contact"
+tabindex="0"
+>Contacts</h4>
+
+<ul role="menu">
+  <li role="none"><a href="/contact" role="menuitem">
       Overview
     </a></li>
-  <li><a href="https://intermineorg.wordpress.com/">
+  <li  role="none"><a href="https://intermineorg.wordpress.com/" role="menuitem">
       <svg class="icon icon-wordpress">
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-wordpress"></use>
       </svg>
@@ -91,7 +122,7 @@
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use>
       </svg>
     </a></li>
-  <li><a href="https://twitter.com/intermineorg">
+  <li  role="none"><a href="https://twitter.com/intermineorg" role="menuitem">
       <svg class="icon icon-twitter">
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-twitter"></use>
       </svg>
@@ -100,7 +131,7 @@
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use>
       </svg>
     </a></li>
-  <li><a href="https://lists.intermine.org/pipermail/dev/">
+  <li  role="none"><a href="https://lists.intermine.org/pipermail/dev/" role="menuitem">
       <svg class="icon icon-email">
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-email"></use>
       </svg>
@@ -109,7 +140,7 @@
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use>
       </svg>
     </a></li>
-  <li><a href="http://chat.intermine.org">
+  <li  role="none"><a href="http://chat.intermine.org" role="menuitem">
       <svg class="icon icon-chat">
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-chat"></use>
       </svg>
@@ -118,7 +149,7 @@
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use>
       </svg>
     </a></li>
-  <li><a href="https://github.com/intermine/intermine">
+  <li  role="none"><a href="https://github.com/intermine/intermine" role="menuitem">
       <svg class="icon icon-github">
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-github"></use>
       </svg>
@@ -128,13 +159,13 @@
       </svg>
     </a></li>
 
-  <li><a href="http://intermine.org/community-calls">
+  <li role=none><a href="http://intermine.org/community-calls" role="menuitem">
     <svg class="icon icon-phone">
       <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-phone"></use>
     </svg>
     Community calls</a></li>
 
-  <li><a href="mailto:info@intermine.org">
+  <li  role="none"><a href="mailto:info@intermine.org" role="menuitem">
       <svg class="icon icon-email">
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-email"></use>
       </svg>
@@ -144,28 +175,35 @@
       </svg></a></li>
 </ul>
  </li>
-      <li tabindex="5" role="menu" aria-haspopup="true"> <h4 class="categories resources">Resources</h4>
-<ul>
-    <li><a href="http://intermine.org/publications">Publications &amp; citing us</a></li>
-    <li><a href="http://intermine.org/team">About the team</a></li>
-    <li><a href="http://intermine.org/projects">Projects</a></li>
-    <li><a href="http://intermine.org/contributors">Contributors</a></li>
-    <li><a href="http://intermine.org/code-of-conduct">Code of Conduct</a></li>
-    <li><a href="https://intermineorg.wordpress.com/logos/">Logos &amp; branding
+      <li role="menuitem"
+      aria-label="Resources"
+      aria-haspopup="true"
+      aria-expanded="false"
+      > <h4
+class="categories resources"
+tabindex="0"
+>Resources</h4>
+
+<ul role="menu" class="sub-menu">
+    <li role="none"><a href="http://intermine.org/publications" role="menuitem">Publications &amp; citing us</a></li>
+    <li role="none"><a href="http://intermine.org/team" role="menuitem">About the team</a></li>
+    <li role="none"><a href="http://intermine.org/projects" role="menuitem">Projects</a></li>
+    <li role="none"><a href="http://intermine.org/contributors" role="menuitem">Contributors</a></li>
+    <li role="none"><a href="http://intermine.org/code-of-conduct" role="menuitem">Code of Conduct</a></li>
+    <li role="none"><a href="https://intermineorg.wordpress.com/logos/" role="menuitem">Logos &amp; branding
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg></a></li>
-    <li><a href="https://github.com/intermine">InterMine on GitHub
+    <li role="none"><a href="https://github.com/intermine" role="menuitem">InterMine on GitHub
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg></a></li>
-    <li><a href="https://intermineorg.wordpress.com/events/">Event Calendar
+    <li role="none"><a href="https://intermineorg.wordpress.com/events/" role="menuitem" >Event Calendar
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg></a></li>
-    <li><a href="http://intermine.readthedocs.io/en/latest/about/#privacy-policy">Privacy Policy
+    <li role="none"><a href="http://intermine.readthedocs.io/en/latest/about/#privacy-policy" role="menuitem">Privacy Policy
             <svg class="icon icon-linkout">
             <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg></a></li>
 </ul>
  </li>
-        <li id="close-nav-container"> <button id="closeNav" aria-label="Close">x</button></li>
     </ul>
   </nav>
 </header>
@@ -187,18 +225,22 @@
 
     <footer>
     <div class="sitemap-link-group biologists">
-        <h4 class="categories biologists">Biologists</h4>
-<ul>
+        <h4
+class="categories biologists"
+tabindex="0"
+>Biologists</h4>
+
+<ul role="menu">
     
-    <li><a href="http://registry.intermine.org/">Which InterMine for my organism?
+    <li role="none"><a href="http://registry.intermine.org/" role="menuitem">Which InterMine for my organism?
             <svg class="icon icon-linkout">
             <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg></a></li>
-    <li><a href="http://intermine.org/tutorials">Tutorials and Videos</a></li>
-    <li><a href="http://flymine.readthedocs.io/en/latest/">User help documentation
+    <li role="none"><a href="http://intermine.org/tutorials" role="menuitem">Tutorials and Videos</a></li>
+    <li role="none"><a href="http://flymine.readthedocs.io/en/latest/" role="menuitem">User help documentation
             <svg class="icon icon-linkout">
-            <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg></a></li>
-    <li><a href="http://intermine.org/mobile-apps">Mobile Apps</a></li>
-    <li><a href="http://intermine.readthedocs.io/en/latest/web-services/#api-and-client-libraries">API Clients
+            <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink" role="menuitem"></use></svg></a></li>
+    <li role="none"><a href="http://intermine.org/mobile-apps" role="menuitem">Mobile Apps</a></li>
+    <li role="none"><a href="http://intermine.readthedocs.io/en/latest/web-services/#api-and-client-libraries" role="menuitem">API Clients
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
             </a></li>
@@ -208,50 +250,58 @@
     
     </div>
     <div class="sitemap-link-group developers">
-            <h4 class="categories developers">Developers</h4>
-<ul>
-    <li><a href="http://intermine.org/developers">Overview</a></li>
-    <li><a href="http://intermine.readthedocs.io/en/latest/">Developer docs &amp; getting started
+            <h4
+class="categories developers"
+tabindex="0"
+>Developers</h4>
+
+<ul role="menu">
+    <li role="none"><a href="http://intermine.org/developers" role="menuitem">Overview</a></li>
+    <li role="none"><a href="http://intermine.readthedocs.io/en/latest/"  role="menuitem">Developer docs &amp; getting started
         <svg class="icon icon-linkout">
             <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
         </a></li>
-    <li><a href="http://iodocs.apps.intermine.org/">API Docs
+    <li role="none"><a href="http://iodocs.apps.intermine.org/"  role="menuitem">API Docs
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
     </a></li>
-    <li><a href="http://registry.intermine.org/">InterMine Registry
+    <li role="none"><a href="http://registry.intermine.org/"  role="menuitem">InterMine Registry
         <svg class="icon icon-linkout">
             <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
         </a></li>
-    <li><a href="http://intermine.readthedocs.io/en/latest/web-services/#api-and-client-libraries">API Clients
+    <li role="none"><a href="http://intermine.readthedocs.io/en/latest/web-services/#api-and-client-libraries"  role="menuitem">API Clients
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
     </a></li>
-    <li><a href="https://lists.intermine.org/pipermail/dev/">Developer email list
+    <li role="none"><a href="https://lists.intermine.org/pipermail/dev/"  role="menuitem">Developer email list
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
     </a></li>
-    <li><a href="http://intermine.org/community-calls/developer-calls">Developer calls</a></li>
-    <li><a href="http://chat.intermine.org">Support chat
+    <li role="none"><a href="http://intermine.org/community-calls/developer-calls"  role="menuitem">Developer calls</a></li>
+    <li role="none"><a href="http://chat.intermine.org" role="menuitem">Support chat
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
     </a></li>
-    <li><a href="https://github.com/intermine">InterMine on GitHub
+    <li role="none"><a href="https://github.com/intermine"  role="menuitem">InterMine on GitHub
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg>
     </a></li>
-    <li><a href="http://intermine.org/contributing">Contributing guidelines</a></li>
+    <li  role="none"><a href="http://intermine.org/contributing"  role="menuitem">Contributing guidelines</a></li>
 
 </ul>
 
         </div>
         <div class="sitemap-link-group contact">
-                <h4 class="categories contact">Contact</h4>
-<ul>
-  <li><a href="/contact">
+                <h4
+class="categories contact"
+tabindex="0"
+>Contacts</h4>
+
+<ul role="menu">
+  <li role="none"><a href="/contact" role="menuitem">
       Overview
     </a></li>
-  <li><a href="https://intermineorg.wordpress.com/">
+  <li  role="none"><a href="https://intermineorg.wordpress.com/" role="menuitem">
       <svg class="icon icon-wordpress">
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-wordpress"></use>
       </svg>
@@ -260,7 +310,7 @@
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use>
       </svg>
     </a></li>
-  <li><a href="https://twitter.com/intermineorg">
+  <li  role="none"><a href="https://twitter.com/intermineorg" role="menuitem">
       <svg class="icon icon-twitter">
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-twitter"></use>
       </svg>
@@ -269,7 +319,7 @@
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use>
       </svg>
     </a></li>
-  <li><a href="https://lists.intermine.org/pipermail/dev/">
+  <li  role="none"><a href="https://lists.intermine.org/pipermail/dev/" role="menuitem">
       <svg class="icon icon-email">
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-email"></use>
       </svg>
@@ -278,7 +328,7 @@
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use>
       </svg>
     </a></li>
-  <li><a href="http://chat.intermine.org">
+  <li  role="none"><a href="http://chat.intermine.org" role="menuitem">
       <svg class="icon icon-chat">
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-chat"></use>
       </svg>
@@ -287,7 +337,7 @@
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use>
       </svg>
     </a></li>
-  <li><a href="https://github.com/intermine/intermine">
+  <li  role="none"><a href="https://github.com/intermine/intermine" role="menuitem">
       <svg class="icon icon-github">
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-github"></use>
       </svg>
@@ -297,13 +347,13 @@
       </svg>
     </a></li>
 
-  <li><a href="http://intermine.org/community-calls">
+  <li role=none><a href="http://intermine.org/community-calls" role="menuitem">
     <svg class="icon icon-phone">
       <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-phone"></use>
     </svg>
     Community calls</a></li>
 
-  <li><a href="mailto:info@intermine.org">
+  <li  role="none"><a href="mailto:info@intermine.org" role="menuitem">
       <svg class="icon icon-email">
         <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-email"></use>
       </svg>
@@ -315,23 +365,27 @@
 
             </div>
             <div class="sitemap-link-group resources">
-        <h4 class="categories resources">Resources</h4>
-<ul>
-    <li><a href="http://intermine.org/publications">Publications &amp; citing us</a></li>
-    <li><a href="http://intermine.org/team">About the team</a></li>
-    <li><a href="http://intermine.org/projects">Projects</a></li>
-    <li><a href="http://intermine.org/contributors">Contributors</a></li>
-    <li><a href="http://intermine.org/code-of-conduct">Code of Conduct</a></li>
-    <li><a href="https://intermineorg.wordpress.com/logos/">Logos &amp; branding
+        <h4
+class="categories resources"
+tabindex="0"
+>Resources</h4>
+
+<ul role="menu" class="sub-menu">
+    <li role="none"><a href="http://intermine.org/publications" role="menuitem">Publications &amp; citing us</a></li>
+    <li role="none"><a href="http://intermine.org/team" role="menuitem">About the team</a></li>
+    <li role="none"><a href="http://intermine.org/projects" role="menuitem">Projects</a></li>
+    <li role="none"><a href="http://intermine.org/contributors" role="menuitem">Contributors</a></li>
+    <li role="none"><a href="http://intermine.org/code-of-conduct" role="menuitem">Code of Conduct</a></li>
+    <li role="none"><a href="https://intermineorg.wordpress.com/logos/" role="menuitem">Logos &amp; branding
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg></a></li>
-    <li><a href="https://github.com/intermine">InterMine on GitHub
+    <li role="none"><a href="https://github.com/intermine" role="menuitem">InterMine on GitHub
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg></a></li>
-    <li><a href="https://intermineorg.wordpress.com/events/">Event Calendar
+    <li role="none"><a href="https://intermineorg.wordpress.com/events/" role="menuitem" >Event Calendar
         <svg class="icon icon-linkout">
                 <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg></a></li>
-    <li><a href="http://intermine.readthedocs.io/en/latest/about/#privacy-policy">Privacy Policy
+    <li role="none"><a href="http://intermine.readthedocs.io/en/latest/about/#privacy-policy" role="menuitem">Privacy Policy
             <svg class="icon icon-linkout">
             <use xlink:href="http://intermine.org/images/symbol-defs.svg#icon-externallink"></use></svg></a></li>
 </ul>
@@ -347,12 +401,12 @@
         </div>
         <h5 class="subheading">Affiliations</h5>
         <div class="affiliation-logos">
-            <a href="https://elixir-europe.org/platforms/interoperability/rirs"><img src="http://intermine.org/images/elixirRIR.png" 
+            <a href="https://elixir-europe.org/platforms/interoperability/rirs"><img src="http://intermine.org/images/elixirRIR.png"
                 alt="Elixir-Europe Recommended Interoperability Resources" width="105" height="100"/></a>
             <a href="http://www.elixir-uk.org/"><img src="http://intermine.org/images/elixir-uk-logo1.png" alt="InterMine is an ELIXIR-UK resource" width="100" height="105" /></a>
             <a href="https://www.gen.cam.ac.uk/"><img src="http://intermine.org/images/cambridge-logo.png" alt="Part of the University of Cambridge" width="202" height="42" /></a>
         </div>
-        <div><a href="http://intermine.org/credits">Credits</div>
+        <div><a href="http://intermine.org/credits">Credits</a></div>
         <br/>
     </div>
 </footer>
