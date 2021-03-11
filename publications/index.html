@@ -826,6 +826,29 @@ tabindex="0"
 </footer>
 
 
+  <script>
+    
+    
+    (function () {
+      try {
+        if (!window.location.search.length) return;
+        var urlParams = new URLSearchParams(window.location.search);
+        var doiParam = urlParams.get("doi");
+        if (!doiParam.length) return;
+        var doiUrl = "http://doi.org/" + doiParam;
+        var anchorElem = document.querySelector("a[href='" + doiUrl + "']");
+        var citeElem = anchorElem.parentNode.cloneNode(true);
+        citeElem.classList.add("highlight-publication");
+        var paragraphElem = document.createElement("p");
+        paragraphElem.appendChild(document.createTextNode("We recommend you cite the following publication: "));
+        var headingElem = document.querySelector("body main h2");
+        headingElem.after(citeElem);
+        headingElem.after(paragraphElem);
+      } catch (error) {
+        console.error("Error occured when trying to acquire publication linked with doi parameter", error);
+      }
+    })();
+  </script>
 </body>
 
 </html>
